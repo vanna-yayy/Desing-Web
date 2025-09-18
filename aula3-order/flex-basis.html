@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            border: 1px solid black;
+            padding: 1rem;
+            margin: 2rem;
+            display: flex;
+            gap: 1rem;
+            /* espaçamentto entre filhos ou elementos que estão dentro do container*/
+            flex-wrap: wrap; /*PARA CONSEGUIR É NECESSARIO COLOCAR WRAP*/
+        }
+           
+        section > h2{
+            flex-basis: 100%; /* a largura do elemento*/
+            background-color: rgb(203, 214, 224);
+            padding: 1rem;
+
+        }                
+        section > div{
+            background-color: aliceblue;
+            padding: 1rem;
+            flex-basis: 20rem;
+    
+           
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <!-- REGRA DE SENTAXI : A MARCAÇÃO DE SECTION PRECISA TER UM TITULO-->
+            <h2>NOTICIA</h2>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolores, asperiores aliquid quae obcaecati illum, voluptate nulla numquam mollitia reprehenderit accusamus ut pariatur ea iste blanditiis placeat fugit exercitationem nesciunt!
+
+                </p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis accusantium sequi odio, illo velit ullam deleniti non consectetur adipisci magni natus vel molestiae commodi vitae, nam voluptates quam nulla atque!</p>
+            </div>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, consequuntur cum architecto in asperiores veniam. Sint alias numquam obcaecati reiciendis! Quaerat accusamus consectetur aliquid pariatur odit vero error exercitationem cum?</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
