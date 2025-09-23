@@ -1,0 +1,38 @@
+main{
+    display:grid;
+  /* assim como no display flex o grid pode ser definido no container*/
+   gap:1rem;
+   grid-template-columns: 1fr 3fr 1fr;
+   /* a quantidade de valores equivale a qtd de colunas no grid- template- areas*/
+   /* é a unidade de fração*/
+   /* posso usar: $, em,rem,px ...*/
+   grid-template-rows:25rem 25rem;
+   /*cuidado ao definir a altura das linhas pois o conteudo pode ser maior que a area disponivel*/
+   grid-template-areas: 
+   "a a d"
+   "b c d";
+   /* 1 - é preciso colocar todos filhos do grid
+      2 - nn posso mesclagem diagonal
+      3 - para espaço vazio usar ponto*/
+}
+section{
+    border: 1px solid  black;
+    padding: 1rem;
+    overflow: auto;
+    /* exibe uma barra de rolagem caso a area seja pequena em comparaçao ao texto*/
+}
+section.noticias{
+    grid-area: a;
+    /* adefinição da variavel para cada area do grid é obrigatoria*/
+}
+
+section.comemoracao{
+    grid-area: b;
+}
+section.organizadores{
+    grid-area: c;
+}
+
+section.corrida{
+    grid-area: d;
+}
