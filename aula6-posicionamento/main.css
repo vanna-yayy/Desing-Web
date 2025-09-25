@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+
+}
+
+header,footer{
+    background-color: darkcyan;
+    text-align: center;
+}
+
+main{
+    margin-top: 10rem;
+}
+
+section{
+    background-color: rgb(182, 240, 255);
+
+}
+
+header,footer,section{
+    padding: 2rem;
+    margin: 0 0 2rem 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.8rem;
+}
+
+div#banner{
+    background-color: rgb(14, 156, 223);
+    padding: 2rem;
+    width: 20rem;
+    height: 20rem;
+    position: absolute; /* o posicionamento absoluto permite que o elemento fique sobreposto fiferentemente do FIXED ele ira seguir a rolagem do scroll*/
+    /* top: ;
+     left: ;
+     rigth: ;
+     bottom: ;
+     As coordenadas irão posicionar o elemento, escolher apenas 2: eixo x e eixo y. ao trabalhar com posicionamento NÂO se trabalha com MARGIN!!*/
+    z-index: 2; /* equivale ao eixo 2. recebe um valor inteiro que representa sua ordem ´de camadas/sequencias*/
+
+
+}
+
+div#esmaecer{
+    background-color: rgba(0, 0, 0, 0.7);
+    /*rgba: */
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    position: fixed;
+    z-index: 3;/*para ficar na frente do header e atras do banner */
+    justify-content: center; /* alinhamento HORIZONTAL*/
+    display: flex;
+    align-items: center;/*alinhamento VERTICAL */
+}
+h2{
+    position:relative;
+    /*permite as definições de coordenadas e NÃO perde espaço no HTML */
+    top:30px;
+    font-size: 5rem;
+}
