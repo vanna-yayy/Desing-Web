@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&display=swap');
+:root{
+    /* declaraçação da variavel*/
+    --tx-color: gray;
+    --bg-color:cornflowerblue;
+}
+/*estudar:design sistem- sistema de padronização de formatação */
+body{
+    background-color: var(--bg-color); /* utilização da variavel*/
+    font-family: "BBH Sans Bartle", sans-serif;
+}
+
+*{
+    /*seleciona tds as marcações*/
+}
+
+p.destaque{
+    /* seleciona as marcações de p com o class igual a destaques*/
+}
+
+.destaque{
+    /* tds que tenham class = destaque*/
+}
+section#principal{
+    /* selecona a section que tenham id = principal*/
+}
+
+#principal{
+     /*mesma coisa*/
+}
+
+.verde.tx-laranja{
+    /*seleciona a marcação que tem os dois valores no atributo de class com valor "verde" e "tx-laranja" */
+}
+
+.verde. tx-laranja{
+ /*seleciona as marcaçoes que tem a class "tx-laranja" que estão dentro da marcação com class "verde" */
+}
+
+ol, ul{
+    /* formata ol e ul*/
+}
+
+p > b{
+   /* formata a tag de b que esta imediatamente dentro do p*/
+}
+
+h2+ p {
+    background-color: #fefefe;
+    /* formata o p que esta imediatamento apos o h2 */
+}
+
+p:hover{
+    /*hover é uma sub classe do css que vai permitir um efito de passar o mause*/
+}
+
+li:fist-child{
+    /*   */
+}
+
+tr: last-child{
+    /*   */
+}
+
+tr:nth-child(2){
+
+    /* um filho que não é o ultimo 
+    odd- impares ou 
+    even- numeros pares 
+    numero inteiro
+    nth = enesimo */
+}
+
+img[src="face.png"]{
+
+
+}
+input[type="radio"]{
+
+
+}
+label[for] {
+
+
+}
