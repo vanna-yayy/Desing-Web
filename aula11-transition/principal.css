@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(182, 194, 194) !important ;
+    /*comando que aumenta a importancia do atributo */
+    background-color: blueviolet;
+}
+
+main{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    
+}
+header a {
+  color: inherit;      
+  text-decoration: none; 
+}
+
+header ul{
+    display: flex;
+    gap: 30px; /* Espaço entre os itens */
+    padding: 30px;
+    margin: 30px;
+    list-style: none;
+
+}
+header li{
+   
+    border-radius: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color:rgb(74, 74, 161);
+   
+}
+header h1{
+    padding: 20px;
+    margin: 30px;
+}
+
+section{
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid black;
+    padding: 2rem;
+    box-sizing: border-box;
+    transition-property: border-radius, box-shadow;
+    /* o atributo de traansition cria uma transição suave do efeito de hover
+      - o valor do transition aos atributos que eu quero que tenha a transição 
+      all - é o valor que representa a transição de todos os atributos do hover*/
+    transition-duration: 0.3s;
+
+    
+}
+
+section:hover{
+    box-shadow: 0 0 10px 0 gray;
+    border-radius: 10px;
+    color:rgb(74, 74, 161);
+
+}
